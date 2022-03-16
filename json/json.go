@@ -21,7 +21,7 @@ Interaction with JSON.
 // serialize StringDict into JSON string
 func json_dumps(self py.Object, args py.Tuple) (py.Object, error) {
 	if len(args) == 0 {
-		return nil, py.ExceptionNewf(py.IndexError, "Too few arguments")
+		return nil, py.ExceptionNewf(py.TypeError, "Too few arguments")
 	} else {
 		if reflect.TypeOf(args[0]).String() == "py.StringDict" {
 			data, err := json.Marshal(args[0])
