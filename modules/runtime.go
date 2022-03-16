@@ -18,6 +18,7 @@ import (
 	"github.com/go-python/gpython/vm"
 
 	_ "github.com/go-python/gpython/builtin"
+	_ "github.com/go-python/gpython/json"
 	_ "github.com/go-python/gpython/math"
 	_ "github.com/go-python/gpython/sys"
 	_ "github.com/go-python/gpython/time"
